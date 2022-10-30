@@ -1,7 +1,22 @@
+body{
+  background-color: blanchedalmond;
+}
 
+.buttonImg{
+  height: 300px;
+  width: 300px;
+}
 .header{
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: bisque;
+  background-color: coral;
+}
+
+/* I want to display each pose in rows of 3 or 4 on the pose index*/
+.pose-container{
+  display: flex;
+  flex-wrap: wrap;
+  flex-basis: 33.333333%;
+
 }

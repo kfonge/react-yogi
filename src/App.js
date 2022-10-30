@@ -59,13 +59,16 @@ const App = () => {
           <h2 className="header"> Re-Active Yoga</h2>
         </div>
         <div>
-          <h2> Choose a Yoga Category:</h2>
+          <h2> Choose a category of yoga poses below:</h2>
         </div>
         <div className="categoryContainer">
           <button onClick={() => navigate("/core_poses")}> Core Poses</button>
           <button onClick={() => navigate("/seated_poses")}> Seated Poses</button>
           <button onClick={() => navigate("/strength_poses")}> Strengthening Poses</button>
-          <button onClick={() => navigate("/chest_poses")}> Chest Opening Poses</button>
+          
+                  <button onClick={() => navigate("/chest_poses")}> Chest Opening Poses</button>
+                  <img className='buttonImg' src= 'https://www.thegoodbody.com/wp-content/uploads/2019/07/Yoga-Poses-for-Strength.png'
+                  onClick={() => navigate("/chest_poses")}/>
         </div>
         <div>
           <Link to="/"></Link>

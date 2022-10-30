@@ -8,8 +8,10 @@ export default function SeatedPoses({Categories}) {
             {Categories ? (
                 Categories.items[1].yoga_poses.map((y) => {
                     return (
+                        <div className='pose-container'>
                         <EachSeatPose key={y.id} pose={y} />
-                    )
+                        </div>
+                            )
                 })
             ) : (
                     (

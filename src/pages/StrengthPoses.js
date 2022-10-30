@@ -4,11 +4,13 @@ export default function StrengthPoses({Categories}) {
     
     return (
         <div>
-            <h1>Index of Seated Poses :</h1>
+            <h1>Index of Strengthening Poses :</h1>
             {Categories ? (
                 Categories.items[2].yoga_poses.map((y) => {
                     return (
-                        <EachStrengthPose key={y.id} pose={y} />
+                        <div className='pose-container'>
+                            <EachStrengthPose key={y.id} pose={y} />
+                        </div>
                     )
                 })
             ) : (
