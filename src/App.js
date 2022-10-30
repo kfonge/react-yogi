@@ -5,7 +5,7 @@ import { Link, Routes, Switch, Route, useNavigate } from "react-router-dom"
 import Home from "./pages/Home"
 import About from "./pages/About"
 import CorePoses from "./pages/CorePoses"
-import ChestOpeningPoses from "./pages/ChestOpeningPoses"
+import ChestOpeningPoses from "./pages/ChestPoses"
 
 const App = () => {
   const navigate = useNavigate()
@@ -63,7 +63,7 @@ const App = () => {
           <button onClick={() => navigate("/core_poses")}> Core Poses</button>
           <button> Seated Poses</button>
           <button> Strengthening Poses</button>
-          <button> Chest Opening Poses</button>
+          <button onClick={() => navigate("/chest_poses")}> Chest Opening Poses</button>
         </div>
         <div>
           <Link to="/"></Link>
@@ -84,7 +84,10 @@ const App = () => {
         />
         {/* this passes the Categories variable(prop) into the child component CorePoses */}
 
-        {/* <Route path="/chest_poses" element={<ChestOpeningPoses />} /> */}
+        <Route
+          path="/chest_poses"
+          element={<ChestOpeningPoses Categories={Categories} />}
+        />
       </Routes>
     </div>
   )
