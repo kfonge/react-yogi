@@ -6,6 +6,8 @@ import Home from "./pages/Home"
 import About from "./pages/About"
 import CorePoses from "./pages/CorePoses"
 import ChestOpeningPoses from "./pages/ChestPoses"
+import SeatedPoses from "./pages/SeatedPoses"
+import StrengthPoses from "./pages/StrengthPoses"
 
 const App = () => {
   const navigate = useNavigate()
@@ -54,15 +56,15 @@ const App = () => {
     <div>
       <div className="App">
         <div>
-          <h2 className="header"> Reactive Yoga</h2>
+          <h2 className="header"> Re-Active Yoga</h2>
         </div>
         <div>
           <h2> Choose a Yoga Category:</h2>
         </div>
         <div className="categoryContainer">
           <button onClick={() => navigate("/core_poses")}> Core Poses</button>
-          <button> Seated Poses</button>
-          <button> Strengthening Poses</button>
+          <button onClick={() => navigate("/seated_poses")}> Seated Poses</button>
+          <button onClick={() => navigate("/strength_poses")}> Strengthening Poses</button>
           <button onClick={() => navigate("/chest_poses")}> Chest Opening Poses</button>
         </div>
         <div>
@@ -88,6 +90,16 @@ const App = () => {
           path="/chest_poses"
           element={<ChestOpeningPoses Categories={Categories} />}
         />
+              
+        <Route
+          path="/seated_poses"
+          element={<SeatedPoses Categories={Categories} />}
+        />
+           
+        <Route
+          path="/strength_poses"
+          element={<StrengthPoses Categories={Categories} />}
+        />      
       </Routes>
     </div>
   )

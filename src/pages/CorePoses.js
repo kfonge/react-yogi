@@ -4,7 +4,7 @@ export default function CorePoses({Categories}) {
     
     return (
         <div>
-            <h1>Examples of Core Poses:</h1>
+            <h1>Index of Core Poses:</h1>
             {Categories ? (
                 Categories.items[0].yoga_poses.map((y) => {
                     return (

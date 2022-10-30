@@ -4,7 +4,7 @@ export default function ChestOpeningPoses({Categories}) {
     
     return (
         <div>
-            <h1>Chest Opener Poses:</h1>
+            <h1>Index of Chest Openers:</h1>
             {Categories ? (
                 Categories.items[3].yoga_poses.map((y) => {
                     return (

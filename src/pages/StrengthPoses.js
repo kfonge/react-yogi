@@ -1,14 +1,14 @@
-import EachSeatPose from "../components/EachSeatPose"
+import EachStrengthPose from "../components/EachStrengthPose"
 
-export default function SeatedPoses({Categories}) {
+export default function StrengthPoses({Categories}) {
     
     return (
         <div>
             <h1>Index of Seated Poses :</h1>
             {Categories ? (
-                Categories.items[1].yoga_poses.map((y) => {
+                Categories.items[2].yoga_poses.map((y) => {
                     return (
-                        <EachSeatPose key={y.id} pose={y} />
+                        <EachStrengthPose key={y.id} pose={y} />
                     )
                 })
             ) : (
