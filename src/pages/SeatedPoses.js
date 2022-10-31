@@ -3,8 +3,11 @@ import EachSeatPose from "../components/EachSeatPose"
 export default function SeatedPoses({Categories}) {
     
     return (
-        <div className='SeatCards'>
+        <div>
             <h1>Index of Seated Poses :</h1>
+        
+        <div className='SeatCards'>
+            
             {Categories ? (
                 Categories.items[1].yoga_poses.map((y) => {
                     return (
@@ -18,6 +21,7 @@ export default function SeatedPoses({Categories}) {
                         <h1>...Loading</h1>
                     )
             )}
-       </div>
+            </div>
+            </div>
     )
 }

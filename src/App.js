@@ -1,15 +1,13 @@
 import "./App.css"
 import { useEffect, useState } from "react"
 import React from "react"
-import { Link, Routes, Switch, Route, useNavigate } from "react-router-dom"
+import { Link, Routes, Route, useNavigate } from "react-router-dom"
 import Home from "./pages/Home"
 import About from "./pages/About"
 import CorePoses from "./pages/CorePoses"
 import ChestOpeningPoses from "./pages/ChestPoses"
 import SeatedPoses from "./pages/SeatedPoses"
 import StrengthPoses from "./pages/StrengthPoses"
-import Button from 'react-bootstrap/Button';
-import Card from 'react-bootstrap/Card';
 
 const App = () => {
   const navigate = useNavigate()
@@ -70,14 +68,12 @@ const App = () => {
           
                   <button onClick={() => navigate("/chest_poses")}> Chest Opening Poses</button>
                   {/* <img className='buttonImg' src= 'https://www.thegoodbody.com/wp-content/uploads/2019/07/Yoga-Poses-for-Strength.png'
-                  onClick={() => navigate("/chest_poses")}/> */} 
+                  onClick={() => navigate("/chest_poses")}/> */}
         </div>
         <div>
-                  <Link to="/">
-                      Home
-          </Link>
+          <Link to="/">Home</Link>
 
-          <Link to="/about"></Link>
+          <Link to="/about"> About</Link>
         </div>
       </div>
       <Routes>
@@ -97,16 +93,16 @@ const App = () => {
           path="/chest_poses"
           element={<ChestOpeningPoses Categories={Categories} />}
         />
-              
+
         <Route
           path="/seated_poses"
           element={<SeatedPoses Categories={Categories} />}
         />
-           
+
         <Route
           path="/strength_poses"
           element={<StrengthPoses Categories={Categories} />}
-        />      
+        />
       </Routes>
     </div>
   )

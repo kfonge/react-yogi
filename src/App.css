@@ -15,18 +15,34 @@ body{
   background-color: coral;
 }
 
+.categoryContainer{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 /* I want to display each pose in rows of 3 or 4 on the pose index*/
 .SeatCards{
   display: flex;
   flex-wrap: wrap;
   justify-content: space space-between;
+  border-color: coral;
+  border-radius: 2rem;
 
+}
+
+.card-img-top {
+  width: 75%;
+  height: 20vw;
+  object-fit: cover;
 }
 .CoreCards{
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space space-between;
+  border-color: coral;
+  border-radius: 2rem;
 }
 .StrongCards{
   display: flex;

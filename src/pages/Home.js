@@ -10,26 +10,22 @@ const Home = () => {
   const navigate = useNavigate()
     return (
       <div>
-        <h1>
-          Home
-        </h1>
-
         <h2> Choose a category of yoga poses below:</h2>
-      
-        <div className="categoryContainer">
-          <Link to="/core_poses">
-          <button> Core Poses</button>
-          </Link>
 
-          <button onClick={() => navigate("/seated_poses")}> Seated Poses</button>
-          <button onClick={() => navigate("/strength_poses")}> Strengthening Poses</button>
-          <button onClick={() => navigate("/chest_poses")}> Chest Opening Poses</button> 
-                  {/* {/* <img className='buttonImg' src= 'https://www.thegoodbody.com/wp-content/uploads/2019/07/Yoga-Poses-for-Strength.png'
-                  onClick={() => navigate("/chest_poses")}/>
-           */}
+        <div className="categoryContainer">
+        <img width='400px' height='400px' src="https://m.media-amazon.com/images/I/71hGZVtidXL._AC_UF894,1000_QL80_.jpg" />  
+        <div>  
+        <ul list-style='none'>
+            <li> <button onClick={() => navigate("/core_poses")}> Core Poses</button> </li>
+            <li> <button onClick={() => navigate("/seated_poses")}> Seated Poses</button> </li>
+            <li> <button onClick={() => navigate("/strength_poses")}> Strengthening Poses</button> </li>
+            <li> <button onClick={() => navigate("/chest_poses")}> Chest Opening Poses</button></li>
+          </ul>
         </div>
+          
         </div>
+      </div>
     )
 }
   
-export default Home
+export default Home;
