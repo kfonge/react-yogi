@@ -1,7 +1,7 @@
 import "./App.css"
 import { useEffect, useState } from "react"
 import React from "react"
-import { Link, Routes, Route, useNavigate } from "react-router-dom"
+import { Link, Routes, Route } from "react-router-dom"
 import Home from "./pages/Home"
 import About from "./pages/About"
 import CorePoses from "./pages/CorePoses"
@@ -10,9 +10,9 @@ import SeatedPoses from "./pages/SeatedPoses"
 import StrengthPoses from "./pages/StrengthPoses"
 
 const App = () => {
-  const navigate = useNavigate()
+//   const navigate = useNavigate()
   const [Categories, setCategory] = useState()
-  const [Loading, setLoading] = useState(false)
+//   const [Loading, setLoading] = useState(false)
 
   const getCategory = async () => {
     try {
@@ -72,7 +72,7 @@ const App = () => {
         </div>
         <div>
           <Link to="/">Home</Link>
-
+          <br></br>
           <Link to="/about"> About</Link>
         </div>
       </div>

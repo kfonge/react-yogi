@@ -1,4 +1,4 @@
-# re ACTIVE-yoga
+# re ACTIVE-yogi
 This is a react app for learning and practicing yoga
 # Technologies Used
 React/JSX
@@ -7,7 +7,7 @@ CSS
 Bootstrap
 
 # App Specifications
-User can view list of yoga poses by category recipes.
+User can view list of yoga poses by category.
 
 # API
 This application uses the Heroku lighting yoga api

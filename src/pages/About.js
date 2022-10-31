@@ -4,7 +4,7 @@ const About = () => {
     return (
       <div>
         <h4>
-          This application displays differnt types of yoga poses to help yogis learn poses, and both their english and sanskrit names.
+          This application displays different types of yoga poses to help yogis learn poses, and both their english and sanskrit names.
         </h4>
       </div>
     )

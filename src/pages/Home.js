@@ -3,7 +3,8 @@ import React from 'react'
 // import ChestOpeningPoses from ".//ChestPoses"
 // import SeatedPoses from ".//SeatedPoses"
 // import StrengthPoses from ".//StrengthPoses"
-import { Link, useNavigate, } from "react-router-dom"
+import { useNavigate, } from "react-router-dom"
+
 
 
 const Home = () => {
@@ -13,7 +14,7 @@ const Home = () => {
         <h2> Choose a category of yoga poses below:</h2>
 
         <div className="categoryContainer">
-        <img width='400px' height='400px' src="https://m.media-amazon.com/images/I/71hGZVtidXL._AC_UF894,1000_QL80_.jpg" />  
+        <img width='400px' height='400px' src="https://m.media-amazon.com/images/I/71hGZVtidXL._AC_UF894,1000_QL80_.jpg" alt='lotus'/>  
         <div>  
         <ul list-style='none'>
             <li> <button onClick={() => navigate("/core_poses")}> Core Poses</button> </li>
