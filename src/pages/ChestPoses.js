@@ -8,7 +8,7 @@ export default function ChestOpeningPoses({Categories}) {
             {Categories ? (
                 Categories.items[3].yoga_poses.map((y) => {
                     return (
-                        <EachChestPose key={y.id} pose={y} />
+                        <EachChestPose className='card' key={y.id} pose={y} />
                     )
                 })
             ) : (
