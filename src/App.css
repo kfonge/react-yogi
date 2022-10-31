@@ -1,3 +1,4 @@
+
 body{
   background-color: blanchedalmond;
 }
@@ -6,6 +7,7 @@ body{
   height: 300px;
   width: 300px;
 }
+
 .header{
   display: flex;
   align-items: center;
@@ -14,9 +16,28 @@ body{
 }
 
 /* I want to display each pose in rows of 3 or 4 on the pose index*/
-.pose-container{
+.SeatCards{
   display: flex;
   flex-wrap: wrap;
-  flex-basis: 33.333333%;
+  justify-content: space space-between;
 
 }
+.CoreCards{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space space-between;
+}
+.StrongCards{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space space-between
+}
+.ChestCards{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space space-between
+}
+

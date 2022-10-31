@@ -3,12 +3,12 @@ import EachChestPose from "../components/EachChestPose"
 export default function ChestOpeningPoses({Categories}) {
     
     return (
-        <div>
+        <div className='ChestCards'>
             <h1>Index of Chest Openers:</h1>
             {Categories ? (
                 Categories.items[3].yoga_poses.map((y) => {
                     return (
-                        <EachChestPose className='card' key={y.id} pose={y} />
+                        <EachChestPose  key={y.id} pose={y} />
                     )
                 })
             ) : (

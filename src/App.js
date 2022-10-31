@@ -8,6 +8,8 @@ import CorePoses from "./pages/CorePoses"
 import ChestOpeningPoses from "./pages/ChestPoses"
 import SeatedPoses from "./pages/SeatedPoses"
 import StrengthPoses from "./pages/StrengthPoses"
+import Button from 'react-bootstrap/Button';
+import Card from 'react-bootstrap/Card';
 
 const App = () => {
   const navigate = useNavigate()
@@ -71,7 +73,9 @@ const App = () => {
                   onClick={() => navigate("/chest_poses")}/> */} 
         </div>
         <div>
-          <Link to="/"></Link>
+                  <Link to="/">
+                      Home
+          </Link>
 
           <Link to="/about"></Link>
         </div>
